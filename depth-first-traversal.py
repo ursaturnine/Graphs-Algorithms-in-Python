@@ -2,7 +2,7 @@
 Depth First Search Traversal with a stack
 """
 
-
+# adjacency list
 graph = {
     'a': ['b', 'c'],
     'b': ['d'],
