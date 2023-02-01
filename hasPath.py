@@ -48,7 +48,7 @@ def hasPathBFS(graph, src, dest):
         current = queue.pop(0)
         if current == dest:
             return True
-        for neighbor in graph[src]:
+        for neighbor in graph[current]:
             queue.append(neighbor)
     return False
 
