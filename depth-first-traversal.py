@@ -23,10 +23,17 @@ def depthFirstPrint(graph, source):
         print(current)
         for neightbor in graph[current]:
             stack.append(neightbor)
+
+def depthFirstPrintRecursive(graph,source):
+    print(source)
+
+    for neighbor in graph[source]:
+        depthFirstPrintRecursive(graph, neighbor)
+
         
 
 
-depthFirstPrint(graph, 'a')
+depthFirstPrintRecursive(graph, 'a')
 
 
 
