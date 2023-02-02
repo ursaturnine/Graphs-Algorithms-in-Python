@@ -38,6 +38,7 @@ def shortestPath(edges, nodeA, nodeB):
                 visited.add(neighbor)
                 queue.append([neighbor, distance + 1])
     
+    # didn't find path
     return -1
 
 
@@ -62,4 +63,4 @@ def buildGraph(edges):
 
     return graph
 
-print(shortestPath(edges, nodeA, nodeB))
+print(shortestPath(edges, 'w', 'x'))
